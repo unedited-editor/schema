@@ -1,0 +1,312 @@
+{
+    "type": "object",
+    "description": "Project Info & Settings",
+    "properties": {
+        "project_name": {
+            "type": "string"
+        },
+        "project_settings": {
+            "type": "object",
+            "properties": {
+                "fps": {
+                    "type": "integer"
+                },
+                "total_length": {
+                    "type": "number"
+                },
+                "uses_set_runtime": {
+                    "type": "boolean"
+                },
+                "start_runtime": {
+                    "type": "number"
+                },
+                "end_runtime": {
+                    "type": "number"
+                },
+                "speed": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "fps",
+                "total_length"
+            ]
+        },
+        "media": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "integer"
+                },
+                "runtime": {
+                    "type": "number"
+                },
+                "total_frames": {
+                    "type": "number"
+                },
+                "fps": {
+                    "type": "number"
+                },
+                "width": {
+                    "type": "number"
+                },
+                "height": {
+                    "type": "number"
+                },
+                "from_cobalt": {
+                    "type": "boolean"
+                },
+                "src": {
+                    "type": "string"
+                },
+                "format": {
+                    "type": "string"
+                },
+                "other": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "properties": {
+                    "type": "string"
+                },
+                "audio_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "type"
+            ]
+        },
+        "timeline": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "locked": {
+                        "type": "boolean"
+                    },
+                    "visible": {
+                        "type": "boolean"
+                    },
+                    "type": {
+                        "type": "integer"
+                    },
+                    "item": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "media_id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "video_audio_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "reversed": {
+                                            "type": "boolean"
+                                        },
+                                        "repeat_extended": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "imagery_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "flipped_horizontally": {
+                                            "type": "boolean"
+                                        },
+                                        "flipped_vertically": {
+                                            "type": "boolean"
+                                        },
+                                        "transform": {
+                                            "type": "object",
+                                            "properties": {
+                                                "x": {
+                                                    "type": "number"
+                                                },
+                                                "y": {
+                                                    "type": "number"
+                                                },
+                                                "scale_x": {
+                                                    "type": "number"
+                                                },
+                                                "scale_y": {
+                                                    "type": "number"
+                                                },
+                                                "rotate_x": {
+                                                    "type": "number"
+                                                },
+                                                "rotate_y": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        },
+                                        "orig_w": {
+                                            "type": "number"
+                                        },
+                                        "orig_h": {
+                                            "type": "number"
+                                        },
+                                        "cropping_transform": {
+                                            "type": "object",
+                                            "properties": {
+                                                "inner_x": {
+                                                    "type": "number"
+                                                },
+                                                "inner_y": {
+                                                    "type": "number"
+                                                },
+                                                "inner_rotate_x": {
+                                                    "type": "number"
+                                                },
+                                                "inner_rotate_y": {
+                                                    "type": "number"
+                                                },
+                                                "inner_w": {
+                                                    "type": "number"
+                                                },
+                                                "inner_h": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "all_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "start_offset": {
+                                            "type": "number"
+                                        },
+                                        "end_offset": {
+                                            "type": "number"
+                                        },
+                                        "speed": {
+                                            "type": "integer"
+                                        },
+                                        "start_position": {
+                                            "type": "number"
+                                        },
+                                        "sticky_linked": {
+                                            "type": "boolean"
+                                        },
+                                        "index": {
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "video_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "fps": {
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "text_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "text": {
+                                            "type": "string"
+                                        },
+                                        "font": {
+                                            "type": "string"
+                                        },
+                                        "size": {
+                                            "type": "number"
+                                        }
+                                    }
+                                },
+                                "total_length": {
+                                    "type": "number"
+                                },
+                                "adjusted_length": {
+                                    "type": "number"
+                                },
+                                "keyframes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "locked": {
+                                                "type": "boolean"
+                                            },
+                                            "active": {
+                                                "type": "boolean"
+                                            },
+                                            "type": {
+                                                "type": "integer"
+                                            },
+                                            "key": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "properties_changed": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "values": {
+                                                            "type": "array"
+                                                        },
+                                                        "active": {
+                                                            "type": "boolean"
+                                                        },
+                                                        "linear": {
+                                                            "type": "boolean"
+                                                        },
+                                                        "instant": {
+                                                            "type": "boolean"
+                                                        },
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "media_id"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "type",
+                    "item"
+                ]
+            }
+        },
+        "schema_version": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "project_name",
+        "project_settings",
+        "media",
+        "timeline",
+        "schema_version"
+    ]
+}
