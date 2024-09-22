@@ -278,10 +278,24 @@
                                                         },
                                                         "data": {
                                                             "type": "string"
+                                                        },
+                                                        "position": {
+                                                            "type": "number"
                                                         }
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+                                },
+                                "audio_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "muted": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "number"
                                         }
                                     }
                                 }
