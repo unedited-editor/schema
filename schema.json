@@ -185,6 +185,12 @@
                                                     "type": "number"
                                                 }
                                             }
+                                        },
+                                        "opacity": {
+                                            "type": "number"
+                                        },
+                                        "visible": {
+                                            "type": "boolean"
                                         }
                                     }
                                 },
