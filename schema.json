@@ -65,9 +65,6 @@
                 "format": {
                     "type": "string"
                 },
-                "other": {
-                    "type": "string"
-                },
                 "name": {
                     "type": "string"
                 },
@@ -191,6 +188,70 @@
                                         },
                                         "visible": {
                                             "type": "boolean"
+                                        },
+                                        "custom_points": {
+                                            "type": "boolean"
+                                        },
+                                        "points": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "points_fill_type": {
+                                            "type": "integer"
+                                        },
+                                        "has_mask": {
+                                            "type": "boolean"
+                                        },
+                                        "mask_id": {
+                                            "type": "number"
+                                        },
+                                        "color_properties": {
+                                            "type": "object",
+                                            "properties": {
+                                                "color_enabled": {
+                                                    "type": "boolean"
+                                                },
+                                                "color": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "fill_properties": {
+                                            "type": "object",
+                                            "properties": {
+                                                "fill_enabled": {
+                                                    "type": "boolean"
+                                                },
+                                                "fill_method": {
+                                                    "type": "string"
+                                                },
+                                                "fill_amount": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        },
+                                        "parent_id": {
+                                            "type": "number"
+                                        },
+                                        "anchor_points": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "pivot_points": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "children_attached": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "number"
+                                            }
                                         }
                                     }
                                 },
@@ -304,12 +365,29 @@
                                             "type": "number"
                                         }
                                     }
+                                },
+                                "subtitle_properties": {
+                                    "type": "object"
+                                },
+                                "shape_properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "image_fill": {
+                                            "type": "boolean"
+                                        },
+                                        "image_id": {
+                                            "type": "string"
+                                        }
+                                    }
                                 }
                             },
                             "required": [
                                 "media_id"
                             ]
                         }
+                    },
+                    "single_line": {
+                        "type": "boolean"
                     }
                 },
                 "required": [
